@@ -1,15 +1,34 @@
-# pair_programming
+# Mirror on Wall
 
-<<<<<<< HEAD
-##
-- [ ] Hello
+## Ideas
 
-###
-- [ ] Another item
-=======
-## title
+- [ ] Current weather
+- [ ] Calendar
+- [ ] Todo list
+- [ ] Full screen
+- [ ] SPA
+- [ ] Media player
+- [ ] React
+- [ ] API for weather
+- [ ] Express router for calendar, todo and media
+- [ ] HTML
+- [ ] CSS
+- [ ] Responsive - prob not required, mobile?
+- [ ] CSS last
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+
+
+
+
+## Ref
+
 - [ ] Hello
 - [ ] ```code here```
-- [ ] [Link](www.google.ca)
- 
->>>>>>> 2cbc0ef64a19170d1beaddf692c455bbf8d30fb7
+- [ ] [Link](www.google.ca) 

@@ -1,4 +1,4 @@
-# Mirror on Wall
+# Mirror on the Wall
 
 ## Ideas
 

@@ -25,7 +25,7 @@
 - [x] Skeleton - dir structure
 - [x] ```npm init -y```
 - [x] Create package.json
-- [ ] ```npm i```
+- [x] ```npm i```
 - [ ] ```npm start```
 - [ ] React client
 - [ ] Weather component

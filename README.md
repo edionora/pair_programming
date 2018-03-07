@@ -23,8 +23,8 @@
 - [x] Create git repo
 - [x] Add collaborators - team members and instructors
 - [x] Skeleton - dir structure
-- [ ] ```npm init -y```
-- [ ] Create package.json
+- [x] ```npm init -y```
+- [x] Create package.json
 - [ ] ```npm i```
 - [ ] ```npm start```
 - [ ] React client

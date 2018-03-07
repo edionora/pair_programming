@@ -2,7 +2,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
 
-class App extends React.Component {
+export default class App extends React.Component {
     render() {
         return (
             <div className="app">
@@ -11,5 +11,3 @@ class App extends React.Component {
         )
     }
 }
-
-export default App

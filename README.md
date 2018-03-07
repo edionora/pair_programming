@@ -26,7 +26,7 @@
 - [x] ```npm init -y```
 - [x] Create package.json
 - [x] ```npm i```
-- [ ] ```npm start```
+- [x] ```npm start```
 - [ ] React client
 - [ ] Weather component
 - [ ] Calendar component

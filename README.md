@@ -22,7 +22,7 @@
 
 - [x] Create git repo
 - [x] Add collaborators - team members and instructors
-- [ ] Skeleton - dir structure
+- [x] Skeleton - dir structure
 - [ ] ```npm init -y```
 - [ ] Create package.json
 - [ ] ```npm i```

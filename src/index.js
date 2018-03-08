@@ -7,6 +7,6 @@ import './styles.css'  // my CSS sheet
 
 ReactDOM.render(
     <Router>
-        <App />
+        <App/>
     </Router>,
     document.getElementById('root'))

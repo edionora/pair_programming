@@ -27,7 +27,8 @@
 - [x] Create package.json
 - [x] ```npm i```
 - [x] ```npm start```
-- [ ] React client
+- [x] React client
+- [ ] Add server
 - [ ] Weather component
 - [ ] Calendar component
 - [ ] News component

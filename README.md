@@ -28,20 +28,11 @@
 - [x] ```npm i```
 - [x] ```npm start```
 - [x] React client
-- [ ] Add server
+- [x] Add server
 - [ ] Weather component
 - [ ] Calendar component
 - [ ] News component
 - [ ] CSS
-
-
-## Markup Ref
-
-- [ ] Hello
-- [ ] ```code here```
-- [ ] [Link](www.google.ca) 
-
-<hr>
 
 ### Others
 

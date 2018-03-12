@@ -1,11 +1,13 @@
 import React from 'react'
 
 const Time = ({ date, time }) => (
-    <div className="time widget">
-        <p> Today is: </p>
-        <p>{ date }</p>
-        <p> And the current time is: </p>
-        <p>{ time }</p>
+    <div className="card  col s3 m3 l3 xl3 show">
+        <div className="card-content">
+       
+     
+        <p className="center">{ date }</p>
+        <p className="center">{ time }</p>
+        </div>
     </div>
 )
 

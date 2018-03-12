@@ -32,23 +32,11 @@ export default class App extends React.Component {
     }
         render() {
             return (
-                <div className="app">
+                <div className="app row">
+                    
                     <Time date={this.state.date} time={this.state.time} />
-                    {/* <div className="text-right"><div id="date">
-                    {this.props.date.toLocaleDateString()}</div>
-                <div id="time">{this.props.date.toLocaleTimeString()}</div></div> */}
                     <Weather temp={this.state.temp} />
                 </div>
             )
         }
     }
-
-// function tick() {
-//     ReactDOM.render(<App date={new Date()}/>, document.getElementById('root')
-//     );
-// }
-// setInterval(tick, 1000);
-
-
-// componentDidMount: function() {
-//   this.interval = setInterval(this.tick, 1000);

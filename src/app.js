@@ -45,3 +45,7 @@ export default class App extends React.Component {
 //     );
 // }
 // setInterval(tick, 1000);
+
+
+// componentDidMount: function() {
+//   this.interval = setInterval(this.tick, 1000);

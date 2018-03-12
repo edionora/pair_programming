@@ -1,12 +1,10 @@
 import React from 'react'
-// import { Switch, Route } from 'react-router-dom'
 import axios from 'axios';
 import Weather from './components/Weather'
 import Time from './components/Time'
 
-
 export default class App extends React.Component {
-    constructor (){
+    constructor() {
         super();
         this.state = {
             temp: 30,
@@ -14,13 +12,12 @@ export default class App extends React.Component {
             time: new Date().toLocaleTimeString()
         }
     }
-    
-    
-    componentWillMount(){
+
+    componentWillMount() {
         const url = `http://${window.location.hostname}:8060/weather`
         const localDate = new Date().toLocaleDateString()
         const localTime = new Date().toLocaleTimeString()
-        axios.get(url) 
+        axios.get(url)
             .then((result) => {
                 this.setState({
                     temp: result.data,
@@ -29,16 +26,15 @@ export default class App extends React.Component {
                 })
             })
     }
-  
 
     render() {
-        return (   
+        return (
             <div className="app">
-                <h1>Test</h1>
-                <Time date={this.state.date} time={this.state.time}/>
-                {/* <div className="text-right"><div id="date">{this.props.date.toLocaleDateString()}</div>
+                <Time date={this.state.date} time={this.state.time} />
+                {/* <div className="text-right"><div id="date">
+                    {this.props.date.toLocaleDateString()}</div>
                 <div id="time">{this.props.date.toLocaleTimeString()}</div></div> */}
-                <Weather temp={this.state.temp}/>
+                <Weather temp={this.state.temp} />
             </div>
         )
     }

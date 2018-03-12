@@ -1,2 +1,9 @@
-.weather {
-  border: 1px solid black; }
+.widget {
+  border: 1px solid black;
+  display: inline-block; }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }

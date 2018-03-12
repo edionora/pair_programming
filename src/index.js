@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './app'
 import { BrowserRouter as Router } from 'react-router-dom'
-import './styles.css'  // my CSS sheet
+import App from './app'
+import './styles.css'
 
 
 ReactDOM.render(
     <Router>
-        <App/>
+        <App />
     </Router>,
-    document.getElementById('root'))
+    document.getElementById('root')
+)

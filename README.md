@@ -30,7 +30,7 @@
 - [x] React client
 - [x] Add server
 - [x] Weather component
-- [x] Time component
+- [ ] Time component (interval)
 - [ ] Calendar component (Holidays)
 - [ ] News component
 - [ ] CSS

@@ -29,8 +29,9 @@
 - [x] ```npm start```
 - [x] React client
 - [x] Add server
-- [ ] Weather component
-- [ ] Calendar component
+- [x] Weather component
+- [x] Time component
+- [ ] Calendar component (Holidays)
 - [ ] News component
 - [ ] CSS
 

@@ -34,6 +34,7 @@
 - [ ] News component
 - [ ] CSS
 
+
 ### Others
 
 - [ ] check formatting

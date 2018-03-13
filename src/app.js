@@ -46,7 +46,7 @@ export default class App extends React.Component {
         getData()
         setInterval(() => {
             getData()
-        }, 10000)
+        }, 60000)  //Changed from 10000
     }
 
     render() {

@@ -30,7 +30,6 @@ app.get('/news', (req, res) => {
         const heading = []
         $('.r').each((i, element) => {
             heading.push($(element).text())
-            console.log($(element).text())
         })
         res.send(heading)
     })

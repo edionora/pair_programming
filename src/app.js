@@ -3,7 +3,7 @@ import axios from 'axios';
 import Weather from './components/Weather'
 import Time from './components/Time'
 import News from './components/News'
-
+import Holidays from './components/Holidays'
 
 export default class App extends React.Component {
     constructor() {
@@ -11,6 +11,7 @@ export default class App extends React.Component {
         this.state = {
             temp: 30,
             news: [],
+            holidays: [],
             date: new Date().toLocaleDateString(),
             time: new Date().toLocaleTimeString(
                 [],
@@ -41,18 +42,27 @@ export default class App extends React.Component {
                         news: result.data
                     })
                 })
+            const holidaysUrl = `http://${window.location.hostname}:8060/holidays`
+            axios.get(holidaysUrl)
+                .then((result) => {
+                    this.setState({
+                        holidays: result.data
+                    })
+                })
         }
 
         getData()
         setInterval(() => {
             getData()
         }, 60000)  //Changed from 10000
+
     }
 
     render() {
         return (
             <div className="app row">
                 <Time date={this.state.date} time={this.state.time} />
+                <Holidays holidays={this.state.holidays}/>
                 <Weather temp={this.state.temp} />
                 <News news={this.state.news} />
             </div>

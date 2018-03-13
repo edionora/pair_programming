@@ -3,7 +3,7 @@
 ## Ideas
 
 - [x] Current weather
-- [ ] Calendar - just holidays for now
+- [x] Calendar - just holidays for now
 - [ ] Todo list
 - [x] Full screen
 - [x] SPA
@@ -31,10 +31,11 @@
 - [x] Add server
 - [x] Weather component
 - [x] Time component (interval)
-- [ ] Calendar component (Holidays)
+- [x] Calendar component (Holidays)
 - [x] News component
 - [ ] Todo list
-- [ ] Media player
+- [ ] Find song source for media player
+- [ ] Design Media player (no server)
 - [ ] CSS
 
 

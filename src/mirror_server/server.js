@@ -2,6 +2,7 @@
 const express = require('express')
 const cors = require('cors')
 const request = require('request')
+const cheerio = require('cheerio')
 
 // App setup
 const app = express()
@@ -18,6 +19,20 @@ app.get('/weather', (req, res) => {
         const conversion = (5 / 9) * (Number(farenheit) - 32)
         const celsius = Math.floor(conversion)
         res.json(celsius)
+    })
+})
+
+// send news
+app.get('/news', (req, res) => {
+    const url = 'https://www.google.ca/search?q=recent%20news'
+    request(url, (error, response, body) => {
+        const $ = cheerio.load(body)
+        const heading = []
+        $('.r').each((i, element) => {
+            heading.push($(element).text())
+            console.log($(element).text())
+        })
+        res.send(heading)
     })
 })
 

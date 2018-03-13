@@ -24,14 +24,16 @@ app.get('/weather', (req, res) => {
 
 // send news
 app.get('/news', (req, res) => {
-    const url = 'https://www.google.ca/search?q=recent%20news'
+    const url = 'https://news.google.com/news/headlines?ned=ca&hl=en-CA&gl=CA'
     request(url, (error, response, body) => {
-        const $ = cheerio.load(body)
-        const heading = []
-        $('.r').each((i, element) => {
-            heading.push($(element).text())
-        })
-        res.send(heading)
+        if (!error && response.statusCode == 200) {
+            const $ = cheerio.load(body)
+            const heading = []
+            $('.M1Uqc a').each((i, element) => {
+                heading.push($(element).text())
+            })
+            res.send(heading)
+        }
     })
 })
 

@@ -2,21 +2,21 @@
 
 ## Ideas
 
-- [ ] Current weather
+- [x] Current weather
 - [ ] Calendar - just holidays for now
 - [ ] Todo list
-- [ ] Full screen
-- [ ] SPA
+- [x] Full screen
+- [x] SPA
 - [ ] Media player
-- [ ] React
-- [ ] API for weather
-- [ ] Express router for calendar, todo and media
-- [ ] HTML
-- [ ] CSS
-- [ ] Responsive - prob not required, mobile?
-- [ ] CSS last
-- [ ] News - API
-- [ ] Nothing clickable - no menus, buttons... all realtime display
+- [x] React
+- [x] API for weather
+- [x] Express router for calendar, todo and media
+- [x] HTML
+- [x] CSS
+- [x] Responsive - prob not required, mobile?
+- [x] CSS last
+- [x] News - API
+- [x] Nothing clickable - no menus, buttons... all realtime display
 
 ## Todo
 
@@ -30,9 +30,11 @@
 - [x] React client
 - [x] Add server
 - [x] Weather component
-- [ ] Time component (interval)
+- [x] Time component (interval)
 - [ ] Calendar component (Holidays)
-- [ ] News component
+- [x] News component
+- [ ] Todo list
+- [ ] Media player
 - [ ] CSS
 
 

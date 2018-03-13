@@ -3,6 +3,7 @@ const express = require('express')
 const cors = require('cors')
 const request = require('request')
 const cheerio = require('cheerio')
+const getHolidays = require('./calendar')
 
 // App setup
 const app = express()
@@ -26,7 +27,7 @@ app.get('/weather', (req, res) => {
 app.get('/news', (req, res) => {
     const url = 'https://news.google.com/news/headlines?ned=ca&hl=en-CA&gl=CA'
     request(url, (error, response, body) => {
-        if (!error && response.statusCode == 200) {
+        if (!error && response.statusCode === 200) {
             const $ = cheerio.load(body)
             const heading = []
             $('.M1Uqc a').each((i, element) => {
@@ -35,6 +36,14 @@ app.get('/news', (req, res) => {
             res.send(heading)
         }
     })
+})
+
+// send holidays
+app.get('/holidays', (req, res) => {
+    const holidays = getHolidays()
+        .map((holiday, i) =>
+            `${holiday.name.replace('\\', '')}, ${holiday.date.slice(0, 10)}`)
+    res.send(holidays)
 })
 
 // start server

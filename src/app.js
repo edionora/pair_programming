@@ -36,12 +36,9 @@ export default class App extends React.Component {
         render() {
             return (
                 <div className="app row">
-                   
                     <Time date={this.state.date} time={this.state.time} />
                     <Weather temp={this.state.temp} />
-
                     <News/>
-                    
                 </div>
             )
         }

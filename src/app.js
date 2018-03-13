@@ -2,6 +2,8 @@ import React from 'react'
 import axios from 'axios';
 import Weather from './components/Weather'
 import Time from './components/Time'
+import News from './components/News'
+
 
 export default class App extends React.Component {
     constructor() {
@@ -9,7 +11,8 @@ export default class App extends React.Component {
         this.state = {
             temp: 30,
             date: new Date().toLocaleDateString(),
-            time: new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})   
+            time: new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})  
+             
         }
     }
 
@@ -33,9 +36,12 @@ export default class App extends React.Component {
         render() {
             return (
                 <div className="app row">
-                    
+                   
                     <Time date={this.state.date} time={this.state.time} />
                     <Weather temp={this.state.temp} />
+
+                    <News/>
+                    
                 </div>
             )
         }

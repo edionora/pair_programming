@@ -33,6 +33,7 @@
 - [x] Time component (interval)
 - [x] Calendar component (Holidays)
 - [x] News component
+- [x] Set up music dir
 - [ ] Todo list
 - [ ] Find song source for media player
 - [ ] Design Media player (no server)

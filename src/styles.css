@@ -3,20 +3,29 @@
   display: inline-block; }
 
 .card {
-  height: 250px; }
+  height: 280px;
+  background: #393B3F;
+  margin: 5px; }
+  .card .card__title {
+    color: deepskyblue !important;
+    padding-right: 10px; }
   .card p {
     font-size: 2.5rem;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif; }
 
-.weather__temp {
-  padding-top: 15%; }
+.temp {
+  padding-left: 35px; }
 
 * {
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: border-box; }
+
+body {
+  background: #1F1E20;
+  color: white; }
 
 .news {
   height: 400px; }

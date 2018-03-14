@@ -35,7 +35,7 @@
 - [x] News component
 - [x] Set up music dir
 - [ ] Todo list
-- [ ] Find song source for media player
+- [x] Find song source for media player
 - [ ] Design Media player (no server)
 - [ ] CSS
 

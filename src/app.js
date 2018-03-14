@@ -4,6 +4,7 @@ import Weather from './components/Weather'
 import Time from './components/Time'
 import News from './components/News'
 import Holidays from './components/Holidays'
+import MediaPlayer from './components/MediaPlayer'
 
 export default class App extends React.Component {
     constructor() {
@@ -62,8 +63,9 @@ export default class App extends React.Component {
         return (
             <div className="app row">
                 <Time date={this.state.date} time={this.state.time} />
-                <Holidays holidays={this.state.holidays}/>
+                <MediaPlayer/>
                 <Weather temp={this.state.temp} />
+                <Holidays holidays={this.state.holidays}/>
                 <News news={this.state.news} />
             </div>
         )

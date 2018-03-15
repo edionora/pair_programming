@@ -12,6 +12,7 @@ export default class App extends React.Component {
         this.state = {
             temp: 30,
             news: [],
+            jsnews: [],
             holidays: [],
             date: new Date().toLocaleDateString(),
             time: new Date().toLocaleTimeString(
@@ -43,6 +44,16 @@ export default class App extends React.Component {
                         news: result.data
                     })
                 })
+
+            const jsnewsUrl = `http://${window.location.hostname}:8060/jsnews`
+            axios.get(jsnewsUrl)
+                .then((result) => {
+                    this.setState({
+                        jsnews: result.data
+                    })
+                })
+
+
             const holidaysUrl = `http://${window.location.hostname}:8060/holidays`
             axios.get(holidaysUrl)
                 .then((result) => {
@@ -63,12 +74,12 @@ export default class App extends React.Component {
         return (
             <div className="app row">
                 <Time date={this.state.date} time={this.state.time} />
-                
+
                 <Weather temp={this.state.temp} />
-                <Holidays holidays={this.state.holidays}/>
-                <MediaPlayer/>
+                <Holidays holidays={this.state.holidays} />
+                <MediaPlayer />
                 <News news={this.state.news} />
-                <News news={this.state.news} />
+                <News news={this.state.jsnews} />
             </div>
         )
     }

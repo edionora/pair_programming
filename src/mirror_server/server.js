@@ -38,6 +38,22 @@ app.get('/news', (req, res) => {
     })
 })
 
+// javascript news
+app.get('/jsnews', (req, res) => {
+    const url = 'https://www.javascript.com/news'
+    request(url, (error, response, body) => {
+        if (!error && response.statusCode === 200) {
+            const $ = cheerio.load(body)
+            const heading = []
+            $('.sb-h').each((i, element) => {
+                heading.push($(element).text())
+            })
+            res.send(heading)
+        }
+    })
+})
+
+
 // send holidays
 app.get('/holidays', (req, res) => {
     const holidays = getHolidays()

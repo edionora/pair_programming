@@ -23,7 +23,7 @@ const eachSongItem = (songItem, i) =>
     )
 
 const MediaPlayer = () => (
-    <div className="card col s4 m4 l4 xl4 center">
+    <div className="card col s3 m3 l3 xl3 center">
         <div className="card-content center">
             <p className="card__title center"> Music Player</p>
 

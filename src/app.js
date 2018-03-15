@@ -63,9 +63,11 @@ export default class App extends React.Component {
         return (
             <div className="app row">
                 <Time date={this.state.date} time={this.state.time} />
-                <MediaPlayer/>
+                
                 <Weather temp={this.state.temp} />
                 <Holidays holidays={this.state.holidays}/>
+                <MediaPlayer/>
+                <News news={this.state.news} />
                 <News news={this.state.news} />
             </div>
         )

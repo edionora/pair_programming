@@ -3,6 +3,7 @@ import axios from 'axios';
 import Weather from './components/Weather'
 import Time from './components/Time'
 import News from './components/News'
+import JSNews from './components/JSNews'
 import Holidays from './components/Holidays'
 import MediaPlayer from './components/MediaPlayer'
 
@@ -79,7 +80,7 @@ export default class App extends React.Component {
                 <Holidays holidays={this.state.holidays} />
                 <MediaPlayer />
                 <News news={this.state.news} />
-                <News news={this.state.jsnews} />
+                <JSNews news={this.state.jsnews} />
             </div>
         )
     }

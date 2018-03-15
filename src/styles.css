@@ -34,5 +34,12 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.2rem; }
 
+.media-player__play-button {
+  background: #393B3F;
+  color: #739932; }
+
+.card-content ul {
+  margin-bottom: 40px; }
+
 .show {
   background: orange; }

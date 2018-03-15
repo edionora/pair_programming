@@ -7,7 +7,7 @@
 - [ ] Todo list
 - [x] Full screen
 - [x] SPA
-- [ ] Media player
+- [x] Media player
 - [x] React
 - [x] API for weather
 - [x] Express router for calendar, todo and media
@@ -36,9 +36,8 @@
 - [x] Set up music dir
 - [ ] Todo list
 - [x] Find song source for media player
-- [ ] Design Media player (no server)
-- [ ] CSS
-
+- [x] Design Media player (no server)
+- [x] CSS
 
 ### Others
 
